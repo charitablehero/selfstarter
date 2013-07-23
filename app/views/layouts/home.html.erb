@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Charitable Heroes</title>
+    <%= stylesheet_link_tag 'home' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><a href="/"><span>Charitable</span> Heroes</a></h1>
+        <h2>The world's <em>only</em> competition to award <em>life-long Charitable Superpowers.</em></h2>
+        <%= link_to 'Become a hero', 'hero', class: 'red-button' %>
+        <div>
+          <div class="call-to-action">
+            <strong><em>Charitable Heroes is a three-round competition. The winner will have the ability to give money away each year for the rest of their lives!</em></strong>
+          </div>
+          <div class="sponsors">
+            <div>
+              <strong><em>Sponsors:</em></strong>
+            </div>
+          </div>
+        </div>
+      </header>
+      <%= yield :layout %>
+      <footer>
+        <div class="sponsors">
+          
+          <strong><em>Sponsors:</em></strong>
+        </div>
+        <nav>
+          <ul>
+            <li><%= link_to 'about', 'competition-details' %></li>
+            <li><%= link_to 'faq', 'faq' %></li>
+            <li><%= link_to 'contact us', 'contact' %></li>
+            
+          </ul>
+        </nav>
+        <%= link_to 'Become a hero', 'hero', class: 'red-button' %>
+      </footer>
+    </div>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37895951-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </body>
+</html>
